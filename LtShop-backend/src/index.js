@@ -22,9 +22,9 @@ app.use(cookieParser());
 
 routes(app);
 
-mongoose.connect(process.env.MONGO_DB)
+mongoose.connect(process.env.MONGO_DB_COMPASS)
     .then(() => {
-        console.log('Connect DB successfully!');
+        console.log('Connect DB successfully!!');
     })
     .catch((err) => {
         console.error('Database connection error:', err);
